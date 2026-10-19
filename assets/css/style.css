@@ -102,6 +102,38 @@ code { font-size: .88em; background: var(--mint-wash); padding: .1em .35em; bord
     radial-gradient(70% 60% at 90% 80%, rgba(8,36,50,.8), transparent 70%);
   background-size: cover, 100% 500px, cover, cover; background-position: center; }
 .hero .eyebrow, .page-hero .eyebrow { color: var(--mint); }
+/* Hero with a photo: a dark overlay keeps the text readable.
+   Darkest on the left behind the words, lighter on the right. */
+.hero.has-photo {
+  background-image:
+    linear-gradient(90deg, rgba(6,30,42,.90) 0%, rgba(6,30,42,.80) 38%, rgba(6,30,42,.50) 70%, rgba(6,30,42,.40) 100%),
+    linear-gradient(180deg, rgba(6,30,42,.45) 0%, rgba(6,30,42,0) 28%, rgba(6,30,42,0) 70%, rgba(6,30,42,.55) 100%),
+    var(--hero-photo);
+  background-size: cover, cover, cover;
+  background-position: center, center, center 55%;
+}
+.hero.has-photo h1, .hero.has-photo .hero-role, .hero.has-photo .hero-intro, .hero.has-photo .eyebrow { text-shadow: 0 1px 14px rgba(0,0,0,.45); }
+.hero.has-photo .hero-intro { color: #EEF7F5; }
+.hero.has-photo .hero-role { color: #B8EEE3; }
+.hero.has-photo .btn-ghost { background: rgba(6,30,42,.35); }
+.hero.has-photo .portrait-wash { opacity: .5; }
+.hero.has-photo .portrait figcaption { color: #FFFFFF; text-shadow: 0 1px 8px rgba(0,0,0,.7); }
+.photo-credit {
+  position: absolute; left: var(--gutter); bottom: calc(clamp(40px, 6vw, 90px) + .6rem); z-index: 2;
+  margin: 0; font-size: .72rem; line-height: 1.4; color: rgba(255,255,255,.88);
+  background: rgba(6,30,42,.6); padding: .2rem .65rem; border-radius: 999px; max-width: calc(100% - 2 * var(--gutter));
+}
+.photo-credit a { color: inherit; text-decoration: none; }
+.photo-credit a:hover { text-decoration: underline; }
+@media (max-width: 860px) {
+  .hero.has-photo {
+    background-image:
+      linear-gradient(180deg, rgba(6,30,42,.82) 0%, rgba(6,30,42,.74) 60%, rgba(6,30,42,.82) 100%),
+      var(--hero-photo);
+    background-size: cover, cover;
+  }
+}
+
 .hero h1, .page-hero h1 { color: #fff; }
 
 .waterline { position: relative; height: clamp(40px, 6vw, 90px); line-height: 0; margin-bottom: -2px; }
