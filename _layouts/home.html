@@ -3,7 +3,8 @@ layout: default
 ---
 {% assign p = site.data.profile %}
 <!-- ============ HERO ============ -->
-<section class="hero" {% if site.hero_image != "" %}style="--hero-photo: url('{{ site.hero_image | relative_url }}')"{% endif %}>
+{% assign photo = site.hero_image | default: "" %}
+<section class="hero{% if photo != "" %} has-photo{% endif %}" {% if photo != "" %}style="--hero-photo: url('{{ photo | relative_url }}')"{% endif %}>
   <div class="wrap hero-inner">
     <div class="hero-text">
       <p class="eyebrow">{{ p.hero.eyebrow }}</p>
@@ -27,6 +28,9 @@ layout: default
       {% if p.hero.portrait_caption != "" %}<figcaption>{{ p.hero.portrait_caption }}</figcaption>{% endif %}
     </figure>
   </div>
+  {% if photo != "" and site.hero_image_credit %}
+  <p class="photo-credit">{% if site.hero_image_credit_url %}<a href="{{ site.hero_image_credit_url }}">{{ site.hero_image_credit }}</a>{% else %}{{ site.hero_image_credit }}{% endif %}</p>
+  {% endif %}
   {% include waterline.html %}
 </section>
 
