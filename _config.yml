@@ -51,7 +51,7 @@ contact:
 # For a site at https://USERNAME.github.io leave baseurl empty.
 # For a project site at https://USERNAME.github.io/REPO set baseurl: "/REPO"
 url: ""
-baseurl: ""
+baseurl: "/aminasaeed"
 
 permalink: /blog/:year/:title/
 markdown: kramdown
