@@ -6,7 +6,7 @@
 # ---------------------------------------------------------------
 
 # Top bar and browser tab show: "MAYA CHEN · WATER RESEARCH"
-title: "Maya Chen"
+title: "Amina Saeed"
 tagline: "Water Research"
 
 # Used by search engines and link previews
@@ -17,9 +17,9 @@ description: "Dr. Maya Chen — marine hydrologist, water researcher and artist.
 hero_image: ""          # e.g. "/assets/images/ocean.jpg"
 
 author:
-  name: "Dr. Maya Chen"
-  role: "Marine hydrologist & artist"
-  email: ""            # e.g. "maya@example.com" — shown as a link and used by the contact form
+  name: "Dr. Amina Saeed"
+  role: "Water scientist"
+  email: "aas552@nyu.edu"            # e.g. "maya@example.com" — shown as a link and used by the contact form
   linkedin: ""         # full URL to your LinkedIn profile, or blank
   instagram: ""        # full URL — handy for the art side, or blank
   location: ""         # e.g. "Bristol, UK" — optional
