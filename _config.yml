@@ -14,7 +14,9 @@ description: "Dr. Amina Saeed —  water researcher and a data scientist with in
 
 # Optional: a wide photo of dark water behind the top of the home page.
 # Leave blank to use the built-in painted water texture.
-hero_image: ""          # e.g. "/assets/images/ocean.jpg"
+hero_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Melville_water_east.jpg/1920px-Melville_water_east.jpg"
+hero_image_credit: "Melville Water, Swan River. Photo: JarrahTree, CC BY 2.5 AU"
+hero_image_credit_url: "https://commons.wikimedia.org/wiki/File:Melville_water_east.jpg"         # e.g. "/assets/images/ocean.jpg"
 
 author:
   name: "Dr. Amina Saeed"
