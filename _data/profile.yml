@@ -5,9 +5,9 @@
 
 hero:
   eyebrow: "Research at the water's edge"
-  name: "Dr. Maya Chen"
-  role: "Marine hydrologist, water researcher & artist"
-  intro: "Exploring how water connects rivers, coasts, and communities — and how research and painting can help us see a changing climate more clearly."
+  name: "Dr. Amina Saeed"
+  role: "Environmental Engineer, Chemical engineer, water researcher and data scientist "
+  intro: "Environmental engineer studying how physical and biogeochemical processes control oxygen, carbon and nutrient dynamics in rivers, estuaries and coastal waters. I integrate high-frequency in-situ sensor data with 3D hydrodynamic–biogeochemical models and machine learning to explain and forecast water quality. My PhD (@The University of Western Australia) coupled a high-frequency estuary observatory with a 3D water quality model to identify the controls on metabolism in the Swan–Canning Estuary. I have since collaborated to implement deep-learning for water quality forecasting (Environmental Modelling & Software, 2024) and co-authored AlgAlert, an algal bloom early-warning model (Ecological Informatics, 2025).I have also worked in government (DBCA, Western Australia) and industry (BHP), turning models into operational tools. These include a real-time estuary water quality dashboard, a water accounting tool for mine sites and machine-learning tools used to predict ore grades and help managers decide where to mine. Earlier, I built and tested dissolved oxygen and thermophysical sensors at NYU and UWA."
   # Add your photo to assets/images/ and put its path here, e.g. "/assets/images/portrait.jpg".
   # Leave blank to show the painted placeholder.
   portrait: ""
