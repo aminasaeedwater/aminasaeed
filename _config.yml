@@ -5,12 +5,12 @@
 #  lives in _data/profile.yml.
 # ---------------------------------------------------------------
 
-# Top bar and browser tab show: "MAYA CHEN · WATER RESEARCH"
+# Top bar and browser tab show: "Amina Saeed · WATER RESEARCH"
 title: "Amina Saeed"
 tagline: "Water Research"
 
 # Used by search engines and link previews
-description: "Dr. Maya Chen — marine hydrologist, water researcher and artist. Research, writing and paintings about rivers, coasts and a changing climate."
+description: "Dr. Amina Saeed —  water researcher and artist. Research, writing about water quality in rivers and estuaries in a changing climate."
 
 # Optional: a wide photo of dark water behind the top of the home page.
 # Leave blank to use the built-in painted water texture.
@@ -20,16 +20,15 @@ author:
   name: "Dr. Amina Saeed"
   role: "Water scientist"
   email: "aas552@nyu.edu"            # e.g. "maya@example.com" — shown as a link and used by the contact form
-  linkedin: ""         # full URL to your LinkedIn profile, or blank
-  instagram: ""        # full URL — handy for the art side, or blank
-  location: ""         # e.g. "Bristol, UK" — optional
+  linkedin: "https://www.linkedin.com/in/amina-abdulrahman-saeed"         # full URL to your LinkedIn profile, or blank
+
 
 # ---------------------------------------------------------------
 #  COURSE — the course strip on the home page and /course
 # ---------------------------------------------------------------
 course:
   show: true                       # false hides the course everywhere
-  title: "Practical Water Loss Management"
+  title: "Practical AI for Water professionals"
   status: "Waitlist open"          # e.g. "Waitlist open", "Enrolling now"
   summary: "A self-paced online course for operators, engineers and managers who want to find, measure and reduce non-revenue water."
   button_text: "Join the waitlist"
