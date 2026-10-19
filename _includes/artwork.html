@@ -1,0 +1,8 @@
+{% comment %} Usage: {% include artwork.html piece=piece %} {% endcomment %}
+<figure class="artwork">
+  <div class="mat"><img src="{{ include.piece.image | relative_url }}" alt="{{ include.piece.title }}, {{ include.piece.medium }}" loading="lazy"></div>
+  <figcaption>
+    <span class="art-title">{{ include.piece.title }}</span>
+    <span class="art-meta">{{ include.piece.medium }}{% if include.piece.year %}, {{ include.piece.year }}{% endif %}</span>
+  </figcaption>
+</figure>

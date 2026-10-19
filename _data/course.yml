@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------
+#  COURSE PAGE CONTENT — edit freely. Title, status, summary and
+#  the sign-up link live in _config.yml under "course:".
+# ---------------------------------------------------------------
+
+audience:
+  - "Network and treatment operators who want to move into loss reduction work"
+  - "Engineers and analysts building a water balance for the first time"
+  - "Managers who need to brief boards or regulators on non-revenue water"
+
+facts:
+  - label: "Format"
+    value: "Self-paced video lessons, worksheets and a live Q&A each month"
+  - label: "Time"
+    value: "About 12 hours over 6 weeks"
+  - label: "Certificate"
+    value: "Certificate of completion with logged CPD hours"
+  - label: "Price"
+    value: "To be announced — waitlist members get the launch price"
+
+modules:
+  - title: "The water balance"
+    text: "Build a top-down water balance and understand where the uncertainty sits."
+  - title: "Metering and data you can trust"
+    text: "Meter accuracy, data gaps and how to sanity-check what the SCADA is telling you."
+  - title: "Apparent losses"
+    text: "Customer meter error, unbilled use and theft — and which ones are worth chasing."
+  - title: "Real losses and leakage"
+    text: "District metered areas, night flow analysis and active leakage control."
+  - title: "Pressure management"
+    text: "How pressure drives leakage and bursts, and how to make the case for PRVs."
+  - title: "Building your loss reduction plan"
+    text: "Prioritise interventions by cost and impact, and present the plan to decision-makers."
+
+faq:
+  - q: "Do I need special software?"
+    a: "No. The worksheets work in Excel or Google Sheets."
+  - q: "Will this count towards my CPD or continuing education?"
+    a: "You'll receive a certificate with the hours logged. I'm applying for formal accreditation; check with your professional body or licensing authority whether self-reported hours count for you."
+  - q: "Can my employer pay?"
+    a: "Yes. Invoices and team places are available — get in touch."
+  - q: "What if it isn't right for me?"
+    a: "Full refund within 14 days of enrolling, no questions asked."

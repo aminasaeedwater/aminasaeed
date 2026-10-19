@@ -1,0 +1,12 @@
+{% if site.course.show %}
+<section class="course-band" aria-labelledby="course-band-title">
+  <div class="wrap course-band-inner">
+    <div>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Online course · {{ site.course.status }}</p>
+      <h2 id="course-band-title">{{ site.course.title }}</h2>
+      <p class="course-summary">{{ site.course.summary }}</p>
+    </div>
+    <a class="btn btn-mint" href="{{ '/course/' | relative_url }}">See the course outline</a>
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 1000" width="750" height="1000">
+<defs>
+<filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+ <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="31" result="n"/>
+ <feDisplacementMap in="SourceGraphic" in2="n" scale="70" xChannelSelector="R" yChannelSelector="G" result="d"/>
+ <feGaussianBlur in="d" stdDeviation="2.2"/>
+</filter>
+<filter id="bleed" x="-20%" y="-20%" width="140%" height="140%">
+ <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="38" result="n"/>
+ <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G" result="d"/>
+ <feGaussianBlur in="d" stdDeviation="6"/>
+</filter>
+<filter id="grain">
+ <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="34"/>
+ <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 0.10 0"/>
+</filter>
+</defs>
+<rect width="750" height="1000" fill="#F7F4EE"/>
+<path d="M-60 499 L20 524 L100 510 L180 528 L260 530 L340 485 L420 481 L500 547 L580 501 L660 499 L740 560 L820 518 L810 967 L730 938 L650 951 L570 912 L490 951 L410 969 L330 942 L250 959 L170 954 L90 905 L10 961 L-70 947Z" fill="#A9C4C8" fill-opacity="0.35" filter="url(#bleed)"/>
+<path d="M242 91 Q264 278 264 468" stroke="#5B7F8C" stroke-width="24.56281915171914" stroke-opacity="0.38566300496418265" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M528 276 Q530 430 556 562" stroke="#3D5C6A" stroke-width="9.75417757515579" stroke-opacity="0.2975891010702341" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M332 293 Q323 480 320 680" stroke="#3D5C6A" stroke-width="18.332409235212122" stroke-opacity="0.43693607974630544" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M266 391 Q266 565 237 717" stroke="#5B7F8C" stroke-width="20.08292375892533" stroke-opacity="0.3070848676898744" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M646 273 Q652 430 659 581" stroke="#5B7F8C" stroke-width="12.80752831048693" stroke-opacity="0.2935521928385735" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M364 197 Q366 432 338 689" stroke="#2B3F4A" stroke-width="13.29004244274312" stroke-opacity="0.5190771605470705" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M452 95 Q451 255 465 435" stroke="#3D5C6A" stroke-width="17.09756672566479" stroke-opacity="0.5994781308815218" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M442 91 Q452 267 424 451" stroke="#5B7F8C" stroke-width="12.740717685308915" stroke-opacity="0.4914065757010321" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M281 127 Q299 293 303 479" stroke="#5B7F8C" stroke-width="14.951473009511805" stroke-opacity="0.5533913877492962" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M692 356 Q704 567 678 777" stroke="#5B7F8C" stroke-width="12.277441150366112" stroke-opacity="0.3553804014109523" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M407 84 Q390 290 402 490" stroke="#2B3F4A" stroke-width="14.777298130723558" stroke-opacity="0.4562211012189328" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M263 200 Q258 411 288 614" stroke="#3D5C6A" stroke-width="21.284617206536616" stroke-opacity="0.2577638641467835" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M685 165 Q694 379 683 575" stroke="#3D5C6A" stroke-width="11.193578381472761" stroke-opacity="0.31483611583288557" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M217 348 Q205 586 193 817" stroke="#5B7F8C" stroke-width="20.307191306599357" stroke-opacity="0.2959972724952239" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M220 191 Q219 412 231 617" stroke="#2B3F4A" stroke-width="9.833150467373686" stroke-opacity="0.36268809461744256" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M334 371 Q315 548 314 712" stroke="#5B7F8C" stroke-width="11.92435514873392" stroke-opacity="0.4489405472419095" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M630 860 L695 895 L555 911 L455 937 L311 930 L168 922 L125 889 L45 860 L150 834 L185 803 L311 790 L445 794 L568 805 L684 826Z" fill="#2B3F4A" fill-opacity="0.45" filter="url(#wash)"/>
+<rect width="750" height="1000" filter="url(#grain)"/>
+</svg>

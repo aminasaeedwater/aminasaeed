@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="article">
+  <header class="article-head page-hero">
+    <div class="wrap narrow">
+      <p class="article-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+        {% assign words = content | number_of_words %}{% assign mins = words | divided_by: 200 | plus: 1 %}
+        <span>{{ mins }} min read</span>
+      </p>
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}<p class="article-sub">{{ page.subtitle }}</p>{% endif %}
+      {% if page.tags.size > 0 %}
+      <ul class="tags" aria-label="Topics">
+        {% for tag in page.tags %}<li><a href="{{ '/topics/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a></li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    {% include waterline.html %}
+  </header>
+
+  <div class="wrap narrow prose">
+    {{ content }}
+  </div>
+
+  <nav class="wrap narrow post-nav" aria-label="More posts">
+    {% if page.previous %}<a class="prev" href="{{ page.previous.url | relative_url }}"><span>Older</span>{{ page.previous.title }}</a>{% endif %}
+    {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Newer</span>{{ page.next.title }}</a>{% endif %}
+  </nav>
+</article>
+
+{% include course-band.html %}

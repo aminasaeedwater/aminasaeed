@@ -1,0 +1,147 @@
+---
+layout: default
+---
+{% assign p = site.data.profile %}
+<!-- ============ HERO ============ -->
+<section class="hero" {% if site.hero_image != "" %}style="--hero-photo: url('{{ site.hero_image | relative_url }}')"{% endif %}>
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">{{ p.hero.eyebrow }}</p>
+      <h1>{{ p.hero.name }}</h1>
+      <p class="hero-role">{{ p.hero.role }}</p>
+      <p class="hero-intro">{{ p.hero.intro }}</p>
+      <p class="hero-actions">
+        <a class="btn btn-mint" href="#research">View research</a>
+        <a class="btn btn-ghost" href="{{ '/art/' | relative_url }}">See the art</a>
+      </p>
+    </div>
+    <figure class="portrait">
+      <span class="portrait-wash" aria-hidden="true"></span>
+      <div class="portrait-frame">
+        {% if p.hero.portrait != "" %}
+          <img src="{{ p.hero.portrait | relative_url }}" alt="{{ p.hero.portrait_alt }}">
+        {% else %}
+          <img src="{{ '/assets/images/art/open-water.svg' | relative_url }}" alt="">
+        {% endif %}
+      </div>
+      {% if p.hero.portrait_caption != "" %}<figcaption>{{ p.hero.portrait_caption }}</figcaption>{% endif %}
+    </figure>
+  </div>
+  {% include waterline.html %}
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about band-paper" id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">{{ p.about.eyebrow }}</p>
+        <h2 id="about-title">{{ p.about.heading }}</h2>
+      </div>
+      <div class="about-text">
+        <p>{{ p.about.text }}</p>
+        {% if p.about.art_text %}<p>{{ p.about.art_text }}</p>{% endif %}
+      </div>
+    </div>
+    <dl class="stats">
+      {% for s in p.about.stats %}<div><dt>{{ s.label }}</dt><dd>{{ s.value }}</dd></div>{% endfor %}
+    </dl>
+  </div>
+</section>
+
+<!-- ============ RESEARCH AREAS ============ -->
+<section class="band-mint" id="research" aria-labelledby="research-title">
+  <div class="wrap">
+    <div class="section-intro">
+      <p class="eyebrow">{{ p.research.eyebrow }}</p>
+      <h2 id="research-title">{{ p.research.heading }}</h2>
+      <p>{{ p.research.intro }}</p>
+    </div>
+    <div class="cards three">
+      {% for a in p.research.areas %}
+      <article class="card area">
+        {% include icon.html name=a.icon %}
+        <h3>{{ a.title }}</h3>
+        <p>{{ a.text }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTED WORK ============ -->
+<section class="band-paper" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="section-intro">
+      <p class="eyebrow">{{ p.work.eyebrow }}</p>
+      <h2 id="work-title">{{ p.work.heading }}</h2>
+      <p>{{ p.work.intro }}</p>
+    </div>
+    <div class="cards three">
+      {% for w in p.work.projects %}
+      <article class="card project">
+        <p class="card-tag">{{ w.tag }}</p>
+        <h3>{% if w.link != "" %}<a href="{{ w.link }}">{{ w.title }}</a>{% else %}{{ w.title }}{% endif %}</h3>
+        <p>{{ w.text }}</p>
+        <p class="outcome"><strong>Outcome:</strong> {{ w.outcome }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ STUDIO (ART) ============ -->
+<section class="studio" id="studio" aria-labelledby="studio-title">
+  <div class="wrap studio-inner">
+    <div class="studio-text">
+      <p class="eyebrow">{{ p.studio.eyebrow }}</p>
+      <h2 id="studio-title">{{ p.studio.heading }}</h2>
+      <blockquote class="statement">{{ p.studio.statement }}</blockquote>
+      <p>{{ p.studio.text }}</p>
+      <a class="btn btn-ink" href="{{ '/art/' | relative_url }}">See all {{ p.studio.pieces.size }} works</a>
+    </div>
+    <div class="gallery-wall">
+      <div class="col">
+        {% for piece in p.studio.pieces limit:2 %}{% include artwork.html piece=piece %}{% endfor %}
+      </div>
+      <div class="col offset">
+        {% for piece in p.studio.pieces offset:2 limit:2 %}{% include artwork.html piece=piece %}{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<section class="band-mint" id="journey" aria-labelledby="journey-title">
+  <div class="wrap journey">
+    <div class="journey-image"><img src="{{ p.journey.image | relative_url }}" alt="{{ p.journey.image_alt }}" loading="lazy"></div>
+    <div>
+      <p class="eyebrow">{{ p.journey.eyebrow }}</p>
+      <h2 id="journey-title">{{ p.journey.heading }}</h2>
+      <p class="journey-intro">{{ p.journey.intro }}</p>
+      <ol class="steps">
+        {% for s in p.journey.steps %}<li><h3>{{ s.title }}</h3><p>{{ s.text }}</p></li>{% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WRITING ============ -->
+{% if site.posts.size > 0 %}
+<section class="band-paper" id="writing" aria-labelledby="writing-title">
+  <div class="wrap">
+    <div class="section-intro with-link">
+      <div>
+        <p class="eyebrow">From the field notebook</p>
+        <h2 id="writing-title">Latest writing</h2>
+      </div>
+      <a class="text-link" href="{{ '/blog/' | relative_url }}">All posts</a>
+    </div>
+    {% include post-list.html posts=site.posts limit=3 %}
+  </div>
+</section>
+{% endif %}
+
+{% include course-band.html %}
+{% include contact.html %}
+{{ content }}

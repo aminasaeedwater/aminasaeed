@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs>
+<filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+ <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="67" result="n"/>
+ <feDisplacementMap in="SourceGraphic" in2="n" scale="70" xChannelSelector="R" yChannelSelector="G" result="d"/>
+ <feGaussianBlur in="d" stdDeviation="2.2"/>
+</filter>
+<filter id="bleed" x="-20%" y="-20%" width="140%" height="140%">
+ <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="74" result="n"/>
+ <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G" result="d"/>
+ <feGaussianBlur in="d" stdDeviation="6"/>
+</filter>
+<filter id="grain">
+ <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="70"/>
+ <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 0.10 0"/>
+</filter>
+</defs>
+<rect width="800" height="1000" fill="#F7F4EE"/>
+<path d="M-60 58 L20 59 L100 39 L180 26 L260 10 L340 50 L420 38 L500 56 L580 32 L660 56 L740 26 L820 58 L860 974 L780 955 L700 962 L620 971 L540 942 L460 963 L380 978 L300 946 L220 978 L140 971 L60 981 L-20 950Z" fill="#2C6E86" fill-opacity="0.55" filter="url(#bleed)"/>
+<path d="M-60 285 L20 311 L100 311 L180 298 L260 285 L340 289 L420 305 L500 292 L580 316 L660 303 L740 289 L820 306 L860 955 L780 976 L700 975 L620 961 L540 965 L460 967 L380 971 L300 977 L220 943 L140 955 L60 964 L-20 953Z" fill="#163E55" fill-opacity="0.6" filter="url(#wash)"/>
+<path d="M688 420 L620 490 L604 589 L478 607 L370 580 L248 577 L202 497 L188 420 L187 338 L279 291 L368 254 L485 210 L594 261 L613 352Z" fill="#7FC1C6" fill-opacity="0.3" filter="url(#bleed)"/>
+<path d="M549 95 Q581 94 622 98" stroke="#CFEDEA" stroke-width="3.860795772491805" stroke-opacity="0.42244981042931123" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M106 940 Q148 933 152 939" stroke="#CFEDEA" stroke-width="4.2389391064270034" stroke-opacity="0.459105718421881" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M686 847 Q751 849 793 850" stroke="#CFEDEA" stroke-width="3.3415824946144577" stroke-opacity="0.6325038056970196" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M340 687 Q380 692 421 684" stroke="#CFEDEA" stroke-width="4.239547670189582" stroke-opacity="0.40632788673448017" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M137 99 Q161 109 189 100" stroke="#CFEDEA" stroke-width="3.083147373517433" stroke-opacity="0.4025248840532796" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M193 433 Q256 425 321 434" stroke="#CFEDEA" stroke-width="2.803812502380131" stroke-opacity="0.4898835708388315" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M277 343 Q354 339 397 341" stroke="#CFEDEA" stroke-width="3.977729458280602" stroke-opacity="0.6883064327034302" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M430 355 Q462 343 510 355" stroke="#CFEDEA" stroke-width="4.380317028422367" stroke-opacity="0.6746449465384785" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M326 129 Q342 141 369 131" stroke="#CFEDEA" stroke-width="2.33642497693217" stroke-opacity="0.5874028753367169" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M600 134 Q641 143 660 137" stroke="#CFEDEA" stroke-width="3.8402973118757524" stroke-opacity="0.4688446426576812" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M354 483 Q384 474 404 482" stroke="#CFEDEA" stroke-width="2.4348758834804123" stroke-opacity="0.5502374239068033" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M447 164 Q477 169 498 165" stroke="#CFEDEA" stroke-width="3.3881398973784194" stroke-opacity="0.6598341616064253" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M106 796 Q146 795 155 797" stroke="#CFEDEA" stroke-width="4.734195037153032" stroke-opacity="0.6630917633724488" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M492 761 Q530 761 545 764" stroke="#CFEDEA" stroke-width="4.726322992163585" stroke-opacity="0.4763546570514551" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M208 693 Q249 684 254 695" stroke="#CFEDEA" stroke-width="4.934230767863463" stroke-opacity="0.4144282679562027" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M603 321 Q655 328 740 320" stroke="#CFEDEA" stroke-width="4.766489014881586" stroke-opacity="0.31276524875695616" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M454 541 Q496 546 498 538" stroke="#CFEDEA" stroke-width="3.111465976356645" stroke-opacity="0.3208263485190121" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M666 683 Q705 680 740 679" stroke="#CFEDEA" stroke-width="4.194559626485852" stroke-opacity="0.34561400532619013" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M356 145 Q366 139 404 145" stroke="#CFEDEA" stroke-width="2.091427144088132" stroke-opacity="0.5101692161204996" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M123 569 Q179 566 202 567" stroke="#CFEDEA" stroke-width="2.6647873750828017" stroke-opacity="0.5256228706694132" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M131 352 Q151 348 195 353" stroke="#CFEDEA" stroke-width="4.3592545048538955" stroke-opacity="0.5275661450227661" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M279 459 Q328 465 359 463" stroke="#CFEDEA" stroke-width="3.653176527843633" stroke-opacity="0.5648300472982581" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M568 400 Q616 391 674 404" stroke="#CFEDEA" stroke-width="2.4923857306744015" stroke-opacity="0.5501857910583374" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M47 733 Q54 735 99 734" stroke="#CFEDEA" stroke-width="2.30043882892424" stroke-opacity="0.4470461565125574" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M555 274 Q612 284 651 277" stroke="#CFEDEA" stroke-width="2.88049445508524" stroke-opacity="0.4884195508876421" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M135 649 Q177 653 187 646" stroke="#CFEDEA" stroke-width="4.949746202926383" stroke-opacity="0.32000512088525135" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

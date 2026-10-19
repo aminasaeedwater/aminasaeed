@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900">
+<defs>
+<filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+ <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="41" result="n"/>
+ <feDisplacementMap in="SourceGraphic" in2="n" scale="70" xChannelSelector="R" yChannelSelector="G" result="d"/>
+ <feGaussianBlur in="d" stdDeviation="2.2"/>
+</filter>
+<filter id="bleed" x="-20%" y="-20%" width="140%" height="140%">
+ <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="48" result="n"/>
+ <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G" result="d"/>
+ <feGaussianBlur in="d" stdDeviation="6"/>
+</filter>
+<filter id="grain">
+ <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="44"/>
+ <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 0.10 0"/>
+</filter>
+</defs>
+<rect width="900" height="900" fill="#F7F4EE"/>
+<path d="M-60 104 L20 96 L100 114 L180 99 L260 94 L340 114 L420 145 L500 138 L580 136 L660 103 L740 122 L820 107 L900 100 L960 396 L880 403 L800 446 L720 440 L640 438 L560 438 L480 402 L400 409 L320 428 L240 434 L160 441 L80 443 L0 395Z" fill="#A7CFD6" fill-opacity="0.5" filter="url(#bleed)"/>
+<path d="M-60 384 L20 386 L100 380 L180 368 L260 379 L340 365 L420 396 L500 393 L580 382 L660 373 L740 395 L820 383 L900 394 L960 813 L880 800 L800 797 L720 804 L640 798 L560 788 L480 793 L400 811 L320 784 L240 784 L160 805 L80 792 L0 801Z" fill="#6E9C8A" fill-opacity="0.45" filter="url(#wash)"/>
+<path d="M-60 599 L20 594 L100 618 L180 589 L260 597 L340 589 L420 605 L500 592 L580 595 L660 609 L740 594 L820 602 L900 615 L960 846 L880 844 L800 850 L720 870 L640 864 L560 851 L480 854 L400 848 L320 859 L240 844 L160 867 L80 874 L0 876Z" fill="#B89A5A" fill-opacity="0.35" filter="url(#wash)"/>
+<path d="M652 846 Q658 799 628 746" stroke="#8A7A3A" stroke-width="6.876197176125743" stroke-opacity="0.4936496883741064" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M723 620 Q702 560 708 498" stroke="#8A7A3A" stroke-width="4.250236868174174" stroke-opacity="0.5595833833264914" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M332 675 Q317 598 326 502" stroke="#3F6553" stroke-width="5.857278775315814" stroke-opacity="0.5037643696636858" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M118 541 Q127 465 130 398" stroke="#8A7A3A" stroke-width="6.032587432894571" stroke-opacity="0.541180515451235" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M51 804 Q42 693 40 604" stroke="#8A7A3A" stroke-width="5.388809815115211" stroke-opacity="0.43465175817597623" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M382 605 Q382 517 402 428" stroke="#B69A52" stroke-width="3.938550458537428" stroke-opacity="0.36288208841560615" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M684 662 Q674 619 672 556" stroke="#3F6553" stroke-width="5.82672100204438" stroke-opacity="0.6966997496738891" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M582 789 Q591 735 595 660" stroke="#5E7D45" stroke-width="5.150537826527703" stroke-opacity="0.6754746970223797" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M162 621 Q168 532 161 435" stroke="#3F6553" stroke-width="7.074130856245352" stroke-opacity="0.5348083624641098" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M251 834 Q244 808 274 763" stroke="#3F6553" stroke-width="7.808869087243862" stroke-opacity="0.5839231589208553" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M130 849 Q133 813 138 781" stroke="#8A7A3A" stroke-width="6.439263687848664" stroke-opacity="0.5126016948314165" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M356 791 Q360 759 341 709" stroke="#3F6553" stroke-width="3.5794498471834943" stroke-opacity="0.6334553198473101" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M494 819 Q497 752 479 665" stroke="#3F6553" stroke-width="7.09214593066834" stroke-opacity="0.5468302042838249" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M398 547 Q397 515 408 471" stroke="#3F6553" stroke-width="6.040625742603571" stroke-opacity="0.39856660004319017" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M470 524 Q466 447 487 348" stroke="#5E7D45" stroke-width="7.7993400522835055" stroke-opacity="0.5088194242373504" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M354 778 Q379 720 372 662" stroke="#5E7D45" stroke-width="3.5722556231824827" stroke-opacity="0.567336606081007" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M393 812 Q399 768 407 742" stroke="#8A7A3A" stroke-width="6.184684675272758" stroke-opacity="0.6754124041106901" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M500 646 Q493 577 483 487" stroke="#3F6553" stroke-width="5.471276143931649" stroke-opacity="0.4685047182479044" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M631 522 Q627 454 622 386" stroke="#B69A52" stroke-width="6.931101140215496" stroke-opacity="0.5603487429729648" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M374 620 Q359 587 360 535" stroke="#5E7D45" stroke-width="6.383666763190902" stroke-opacity="0.5633372084623052" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M422 830 Q402 746 412 648" stroke="#B69A52" stroke-width="6.064997554475791" stroke-opacity="0.504722923317046" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M331 745 Q314 720 313 674" stroke="#8A7A3A" stroke-width="6.37693746421569" stroke-opacity="0.5677410983456972" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M190 790 Q181 702 199 606" stroke="#5E7D45" stroke-width="5.012737231168235" stroke-opacity="0.6776658275462679" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M301 622 Q307 583 277 559" stroke="#5E7D45" stroke-width="7.00552233155889" stroke-opacity="0.6325375466384999" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M522 688 Q540 586 526 497" stroke="#5E7D45" stroke-width="3.8601052929295623" stroke-opacity="0.5176957390188335" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M697 744 Q698 660 714 588" stroke="#8A7A3A" stroke-width="7.484373274811943" stroke-opacity="0.5962563200100646" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M301 733 Q306 639 326 547" stroke="#B69A52" stroke-width="5.531424067939074" stroke-opacity="0.6893295205095555" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M526 605 Q517 544 546 481" stroke="#3F6553" stroke-width="5.0209809374461365" stroke-opacity="0.48602618998386143" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M414 848 Q417 797 421 739" stroke="#3F6553" stroke-width="7.551270533030455" stroke-opacity="0.6144473265131254" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M430 725 Q406 638 408 536" stroke="#5E7D45" stroke-width="4.496067908877233" stroke-opacity="0.6817749110341786" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M605 706 Q598 653 628 609" stroke="#8A7A3A" stroke-width="3.7875968423228032" stroke-opacity="0.3838669070744585" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M125 541 Q155 500 149 440" stroke="#8A7A3A" stroke-width="6.65663201172639" stroke-opacity="0.5793127767386729" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M639 710 Q657 629 648 549" stroke="#8A7A3A" stroke-width="5.512745947089828" stroke-opacity="0.4039704838787731" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M78 577 Q84 521 97 481" stroke="#B69A52" stroke-width="5.686764399787064" stroke-opacity="0.4560009081032772" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M73 853 Q54 784 62 699" stroke="#3F6553" stroke-width="7.8004721026668" stroke-opacity="0.4033795832100281" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M728 599 Q739 544 731 472" stroke="#8A7A3A" stroke-width="7.427348927612983" stroke-opacity="0.5083079926576741" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M608 757 Q620 710 600 673" stroke="#8A7A3A" stroke-width="3.535812321115641" stroke-opacity="0.5667364278143491" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M576 825 Q585 788 581 760" stroke="#8A7A3A" stroke-width="4.278345271161749" stroke-opacity="0.6502873478889268" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M790 733 Q793 649 782 556" stroke="#8A7A3A" stroke-width="7.4659776358319565" stroke-opacity="0.6591425715852195" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M540 699 Q553 652 564 590" stroke="#5E7D45" stroke-width="3.8856779230203395" stroke-opacity="0.36510466318078294" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M631 533 Q655 488 640 426" stroke="#8A7A3A" stroke-width="6.483552050164095" stroke-opacity="0.39087330570551876" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M458 520 Q447 451 475 373" stroke="#5E7D45" stroke-width="7.453057003506574" stroke-opacity="0.6907038797587444" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M203 605 Q205 543 215 496" stroke="#3F6553" stroke-width="7.289531684982036" stroke-opacity="0.5712665316587846" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M445 542 Q442 468 445 410" stroke="#3F6553" stroke-width="6.944175958915925" stroke-opacity="0.5965974479629257" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M35 822 Q43 778 57 723" stroke="#B69A52" stroke-width="7.749519885611544" stroke-opacity="0.6746912464102186" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M201 615 Q195 552 180 499" stroke="#3F6553" stroke-width="6.378482718560983" stroke-opacity="0.5745279457147459" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M824 786 Q827 698 830 628" stroke="#3F6553" stroke-width="6.343782991771415" stroke-opacity="0.6616937672700269" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M313 675 Q337 629 337 592" stroke="#8A7A3A" stroke-width="5.59538541895327" stroke-opacity="0.38336388349459627" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M768 718 Q769 643 750 553" stroke="#8A7A3A" stroke-width="7.4954117282585155" stroke-opacity="0.6114275560492793" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M602 609 Q614 524 607 461" stroke="#3F6553" stroke-width="7.931447356570858" stroke-opacity="0.40682459667441356" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M66 575 Q91 470 88 385" stroke="#3F6553" stroke-width="6.521599729401104" stroke-opacity="0.5838273583697775" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M192 567 Q205 505 191 430" stroke="#3F6553" stroke-width="4.810973079130032" stroke-opacity="0.6102986353787238" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M53 572 Q41 526 39 479" stroke="#8A7A3A" stroke-width="7.695220985437501" stroke-opacity="0.5871177078815243" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M116 596 Q120 558 141 510" stroke="#8A7A3A" stroke-width="3.1059867451695764" stroke-opacity="0.39122215820027806" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M297 704 Q312 604 319 511" stroke="#B69A52" stroke-width="3.8186750165964547" stroke-opacity="0.6983365418873317" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M25 757 Q28 665 22 593" stroke="#B69A52" stroke-width="4.05736788790308" stroke-opacity="0.4656772613781403" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M87 575 Q101 529 96 506" stroke="#8A7A3A" stroke-width="6.000461285288219" stroke-opacity="0.5597274460409085" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M396 792 Q396 760 378 726" stroke="#8A7A3A" stroke-width="6.025772433190031" stroke-opacity="0.43172944860384804" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M340 768 Q352 681 361 591" stroke="#3F6553" stroke-width="4.290030725182089" stroke-opacity="0.4672772063895328" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<path d="M335 813 Q315 742 319 687" stroke="#5E7D45" stroke-width="3.369687970097724" stroke-opacity="0.5696776346004523" fill="none" stroke-linecap="round" filter="url(#bleed)"/>
+<rect width="900" height="900" filter="url(#grain)"/>
+</svg>

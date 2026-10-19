@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs>
+<filter id="wash" x="-20%" y="-20%" width="140%" height="140%">
+ <feTurbulence type="fractalNoise" baseFrequency="0.009" numOctaves="4" seed="11" result="n"/>
+ <feDisplacementMap in="SourceGraphic" in2="n" scale="70" xChannelSelector="R" yChannelSelector="G" result="d"/>
+ <feGaussianBlur in="d" stdDeviation="2.2"/>
+</filter>
+<filter id="bleed" x="-20%" y="-20%" width="140%" height="140%">
+ <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="18" result="n"/>
+ <feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G" result="d"/>
+ <feGaussianBlur in="d" stdDeviation="6"/>
+</filter>
+<filter id="grain">
+ <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="14"/>
+ <feColorMatrix values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 0.10 0"/>
+</filter>
+</defs>
+<rect width="800" height="1000" fill="#F7F4EE"/>
+<path d="M-60 99 L20 81 L100 90 L180 88 L260 95 L340 100 L420 75 L500 73 L580 102 L660 88 L740 99 L820 72 L860 166 L780 176 L700 158 L620 184 L540 183 L460 151 L380 151 L300 170 L220 184 L140 164 L60 158 L-20 165Z" fill="#9FD3CC" fill-opacity="0.5618584342343081" filter="url(#wash)"/>
+<path d="M-60 154 L20 156 L100 147 L180 147 L260 146 L340 155 L420 149 L500 139 L580 169 L660 158 L740 161 L820 145 L860 246 L780 241 L700 214 L620 222 L540 236 L460 236 L380 244 L300 225 L220 240 L140 234 L60 221 L-20 231Z" fill="#5FA8B0" fill-opacity="0.40542291656825874" filter="url(#wash)"/>
+<path d="M-60 218 L20 221 L100 201 L180 208 L260 228 L340 214 L420 206 L500 219 L580 225 L660 224 L740 213 L820 215 L860 341 L780 350 L700 341 L620 336 L540 340 L460 323 L380 324 L300 348 L220 358 L140 344 L60 336 L-20 328Z" fill="#2F7F8E" fill-opacity="0.5615493546070782" filter="url(#wash)"/>
+<path d="M-60 332 L20 323 L100 335 L180 312 L260 322 L340 338 L420 325 L500 320 L580 314 L660 324 L740 338 L820 304 L860 432 L780 434 L700 436 L620 431 L540 433 L460 423 L380 424 L300 419 L220 406 L140 435 L60 424 L-20 411Z" fill="#1D5E72" fill-opacity="0.5955191593846335" filter="url(#wash)"/>
+<path d="M-60 402 L20 401 L100 408 L180 411 L260 411 L340 405 L420 390 L500 397 L580 395 L660 410 L740 420 L820 418 L860 518 L780 519 L700 498 L620 520 L540 513 L460 492 L380 490 L300 490 L220 516 L140 498 L60 493 L-20 512Z" fill="#5FA8B0" fill-opacity="0.47123127805693354" filter="url(#wash)"/>
+<path d="M-60 480 L20 493 L100 480 L180 484 L260 500 L340 491 L420 486 L500 491 L580 475 L660 488 L740 489 L820 481 L860 569 L780 597 L700 583 L620 572 L540 587 L460 594 L380 566 L300 566 L220 570 L140 591 L60 571 L-20 590Z" fill="#A8D8CF" fill-opacity="0.3673788446327118" filter="url(#wash)"/>
+<path d="M-60 559 L20 586 L100 580 L180 570 L260 559 L340 575 L420 565 L500 572 L580 563 L660 574 L740 553 L820 562 L860 697 L780 693 L700 673 L620 693 L540 673 L460 696 L380 689 L300 677 L220 671 L140 662 L60 694 L-20 663Z" fill="#2F7F8E" fill-opacity="0.4861755408947261" filter="url(#wash)"/>
+<path d="M-60 666 L20 652 L100 677 L180 680 L260 671 L340 664 L420 659 L500 658 L580 653 L660 670 L740 661 L820 652 L860 768 L780 788 L700 775 L620 783 L540 776 L460 796 L380 797 L300 765 L220 772 L140 776 L60 800 L-20 793Z" fill="#143F52" fill-opacity="0.5905502812952045" filter="url(#wash)"/>
+<rect width="800" height="1000" filter="url(#grain)"/>
+</svg>

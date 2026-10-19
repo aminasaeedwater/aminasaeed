@@ -1,0 +1,61 @@
+---
+layout: default
+---
+{% assign c = site.data.course %}
+{% capture enroll %}{% if site.course.enroll_url != "" %}{{ site.course.enroll_url }}{% else %}#enroll{% endif %}{% endcapture %}
+<section class="course-hero page-hero">
+  <div class="wrap narrow">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Online course · {{ site.course.status }}</p>
+    <h1>{{ site.course.title }}</h1>
+    <p class="article-sub">{{ site.course.summary }}</p>
+    <p><a class="btn btn-mint" href="{{ enroll }}">{{ site.course.button_text }}</a></p>
+  </div>
+  {% include waterline.html %}
+</section>
+
+<div class="wrap narrow course-body">
+  <section aria-labelledby="who">
+    <h2 id="who">Who it's for</h2>
+    <ul class="checks">
+      {% for item in c.audience %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+  </section>
+
+  <section aria-labelledby="details">
+    <h2 id="details">The details</h2>
+    <dl class="facts">
+      {% for f in c.facts %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}
+    </dl>
+  </section>
+
+  <section aria-labelledby="outline">
+    <h2 id="outline">What you'll work through</h2>
+    <ol class="modules">
+      {% for m in c.modules %}
+      <li><h3>{{ m.title }}</h3><p>{{ m.text }}</p></li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  {{ content }}
+
+  <section aria-labelledby="faq">
+    <h2 id="faq">Questions</h2>
+    {% for item in c.faq %}
+    <details>
+      <summary>{{ item.q }}</summary>
+      <p>{{ item.a }}</p>
+    </details>
+    {% endfor %}
+  </section>
+
+  <section id="enroll" class="enroll-box" aria-labelledby="enroll-title">
+    <h2 id="enroll-title">{{ site.course.status }}</h2>
+    {% if site.course.enroll_url != "" %}
+      <p>Sign-up and payment are handled securely by my course platform.</p>
+      <a class="btn btn-mint" href="{{ site.course.enroll_url }}">{{ site.course.button_text }}</a>
+    {% else %}
+      <p>The sign-up link isn't live yet. {% if site.author.email != "" %}Email <a href="mailto:{{ site.author.email }}?subject=Course%20waitlist">{{ site.author.email }}</a> to be told first.{% else %}Check back soon.{% endif %}</p>
+    {% endif %}
+  </section>
+</div>
