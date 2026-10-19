@@ -6,64 +6,64 @@
 hero:
   eyebrow: "Research at the water's edge"
   name: "Dr. Amina Saeed"
-  role: "Environmental Engineer, Chemical engineer, water researcher and data scientist "
-  intro: "Environmental engineer studying how physical and biogeochemical processes control oxygen, carbon and nutrient dynamics in rivers, estuaries and coastal waters. I integrate high-frequency in-situ sensor data with 3D hydrodynamic–biogeochemical models and machine learning to explain and forecast water quality. My PhD (@The University of Western Australia) coupled a high-frequency estuary observatory with a 3D water quality model to identify the controls on metabolism in the Swan–Canning Estuary. I have since collaborated to implement deep-learning for water quality forecasting (Environmental Modelling & Software, 2024) and co-authored AlgAlert, an algal bloom early-warning model (Ecological Informatics, 2025).I have also worked in government (DBCA, Western Australia) and industry (BHP), turning models into operational tools. These include a real-time estuary water quality dashboard, a water accounting tool for mine sites and machine-learning tools used to predict ore grades and help managers decide where to mine. Earlier, I built and tested dissolved oxygen and thermophysical sensors at NYU and UWA."
+  role: "Environmental and chemical engineer, water researcher & data scientist"
+  intro: "I study how physical and biogeochemical processes control oxygen, carbon and nutrients in rivers, estuaries and coastal waters, and combine high-frequency sensors, 3D models and machine learning to explain and forecast water quality."
   # Add your photo to assets/images/ and put its path here, e.g. "/assets/images/portrait.jpg".
   # Leave blank to show the painted placeholder.
   portrait: ""
-  portrait_alt: "Portrait of Dr. Maya Chen"
+  portrait_alt: "Portrait of Dr. Amina Saeed"
   portrait_caption: "In the field and in the studio"
 
 about:
-  eyebrow: "About the researcher"
-  heading: "Following water, understanding change"
-  text: "Maya's research focuses on freshwater resilience, ocean health, and climate adaptation. She brings field observations and practical questions together to explore how connected water systems respond to change."
-  art_text: "Alongside the science, she paints. The rivers and coastlines she measures by day become watercolours and ink studies in the studio — another way of noticing what the data can't hold."
-  # Replace with your own numbers. Add or remove items freely.
+  eyebrow: "About"
+  heading: "From sensors to forecasts"
+  text: "My PhD at The University of Western Australia coupled a high-frequency estuary observatory with a 3D water quality model to identify the controls on metabolism in the Swan–Canning Estuary. Since then I have collaborated on deep learning for water quality forecasting (Environmental Modelling & Software, 2024) and co-authored AlgAlert, an algal bloom early-warning model (Ecological Informatics, 2025)."
+  art_text: "In government (DBCA, Western Australia) and industry (BHP) I have turned models into operational tools: a real-time estuary water quality dashboard, a water accounting tool for mine sites, and machine-learning tools that predict ore grades and help managers decide where to mine. Earlier, I built and tested dissolved oxygen and thermophysical sensors at NYU and UWA."
+  # Replace or add to these with your own highlights.
   stats:
-    - value: "12"
-      label: "years in research"
-    - value: "38"
-      label: "field studies"
-    - value: "24"
-      label: "publications"
+    - value: "PhD"
+      label: "The University of Western Australia"
+    - value: "3"
+      label: "sectors: research, government and industry"
+    - value: "2"
+      label: "published forecasting models (2024, 2025)"
 
 research:
   eyebrow: "Questions worth exploring"
   heading: "Research areas"
-  intro: "From inland catchments to coastal waters, the work looks at the relationships that shape healthy, adaptable water systems."
-  # icon can be: drop, waves, leaf
+  intro: "From rivers to estuaries and coastal waters, my work connects what we measure with what we can model, explain and forecast."
+  # icon can be: drop, waves, leaf, pulse, layers
   areas:
     - icon: drop
-      title: "Freshwater systems"
-      text: "How rivers, streams, and catchments respond to pressure — and what helps freshwater habitats remain resilient."
-    - icon: waves
-      title: "Coastal ecosystems"
-      text: "The changing exchange between land and sea, with attention to water quality and coastal habitat health."
-    - icon: leaf
-      title: "Climate resilience"
-      text: "Ways to turn observations of shifting water conditions into clearer adaptation questions and choices."
+      title: "Oxygen, carbon and nutrients"
+      text: "How physical and biogeochemical processes control oxygen, carbon and nutrient dynamics in rivers, estuaries and coastal waters."
+    - icon: pulse
+      title: "High-frequency observation"
+      text: "In-situ sensors and estuary observatories that capture rapid changes in water quality, and the sensor design behind them."
+    - icon: layers
+      title: "Models and machine learning"
+      text: "3D hydrodynamic–biogeochemical models and machine learning that explain what drives water quality and forecast what comes next."
 
 work:
   eyebrow: "From observation to insight"
   heading: "Selected work"
-  intro: "Three examples of the research themes and practical outputs that guide this work."
+  intro: "Three projects that link field data, models and decisions."
   projects:
-    - tag: "Freshwater"
-      title: "Reading river change"
-      text: "Comparing field observations across changing river conditions to understand where freshwater systems face pressure."
-      outcome: "A clearer framework for identifying questions to investigate in future field studies."
-      link: ""        # optional: a paper, report or blog post URL
-    - tag: "Coastal waters"
-      title: "Where rivers meet the sea"
-      text: "Examining how freshwater movement and coastal conditions interact at the boundary between land and ocean."
-      outcome: "A practical way to organise observations of connected coastal water conditions."
-      link: ""
-    - tag: "Adaptation"
-      title: "Planning for variability"
-      text: "Bringing water observations into conversations about how ecosystems and communities might respond to climate change."
-      outcome: "Accessible research questions to support more informed adaptation discussions."
-      link: ""
+    - tag: "PhD research"
+      title: "What controls estuary metabolism"
+      text: "Coupled a high-frequency estuary observatory with a 3D water quality model to identify the controls on metabolism in the Swan–Canning Estuary."
+      outcome: "An integrated observation and modelling approach to estuary metabolism."
+      link: ""        # optional: thesis or paper URL
+    - tag: "Forecasting"
+      title: "Deep learning for water quality"
+      text: "Collaborated to implement deep-learning models that forecast water quality from monitoring data."
+      outcome: "Published in Environmental Modelling & Software (2024)."
+      link: ""        # optional: paper URL
+    - tag: "Early warning"
+      title: "AlgAlert"
+      text: "Co-authored an algal bloom early-warning model that turns water quality data into advance notice of blooms."
+      outcome: "Published in Ecological Informatics (2025)."
+      link: ""        # optional: paper URL
 
 studio:
   eyebrow: "Art practice"
@@ -101,20 +101,22 @@ studio:
 
 journey:
   eyebrow: "A research journey"
-  heading: "Curiosity in motion"
-  intro: "A simple path from studying water systems to asking how research — and art — can inform a more resilient future."
-  # Placeholder image: replace with a photo of your own, e.g. "/assets/images/river.jpg"
+  heading: "From sensors to operational tools"
+  intro: "Each step has moved closer to putting water quality science in the hands of the people who manage water."
+  # Placeholder image: replace with a photo of your own, e.g. "/assets/images/estuary.jpg"
   image: "/assets/images/art/river-journey.svg"
   image_alt: "A river running through forest"
   steps:
-    - title: "Education in water systems"
-      text: "Built a foundation in the movement of water and the connections between aquatic environments."
-    - title: "Field-based research"
-      text: "Developed an observation-led approach to freshwater and coastal research."
-    - title: "Climate adaptation focus"
-      text: "Now explores how water research can frame practical questions about environmental change."
+    - title: "Sensor development, NYU and UWA"
+      text: "Built and tested dissolved oxygen and thermophysical sensors."
+    - title: "PhD, The University of Western Australia"
+      text: "Coupled a high-frequency estuary observatory with a 3D water quality model to identify the controls on metabolism in the Swan–Canning Estuary."
+    - title: "Government and industry, DBCA and BHP"
+      text: "Turned models into operational tools: a real-time estuary water quality dashboard, a water accounting tool for mine sites, and machine-learning tools to predict ore grades."
+    - title: "Forecasting water quality"
+      text: "Deep learning for water quality forecasting (2024) and the AlgAlert algal bloom early-warning model (2025)."
 
 contact:
   eyebrow: "Start a conversation"
   heading: "Get in touch"
-  text: "Have a question about water research, a commission, or an idea to explore? Send a short message using the form."
+  text: "Questions about water quality modelling, forecasting tools, a collaboration or the course? Send a short message using the form."
