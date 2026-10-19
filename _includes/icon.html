@@ -1,9 +1,13 @@
-{% comment %} Usage: {% include icon.html name="drop" %} — drop, waves or leaf {% endcomment %}
+{% comment %} Usage: {% include icon.html name="drop" %} — drop, waves, leaf, pulse or layers {% endcomment %}
 <svg class="icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
 {% if include.name == "waves" %}
   <path d="M4 12c4-3 8-3 12 0s8 3 12 0M4 18c4-3 8-3 12 0s8 3 12 0M4 24c4-3 8-3 12 0s8 3 12 0"/>
 {% elsif include.name == "leaf" %}
   <path d="M7 25C7 14 14 7 26 6c0 12-7 19-17 19"/><path d="M7 25 18 14"/>
+{% elsif include.name == "pulse" %}
+  <path d="M3 17h5l3-8 4 15 4-11 3 4h7"/>
+{% elsif include.name == "layers" %}
+  <path d="M16 5 4 11l12 6 12-6-12-6Z"/><path d="m4 16 12 6 12-6"/><path d="m4 21 12 6 12-6"/>
 {% else %}
   <path d="M16 4s-8 9.5-8 15a8 8 0 0 0 16 0c0-5.5-8-15-8-15Z"/><path d="M12.5 19.5a3.6 3.6 0 0 0 3 3.2"/>
 {% endif %}
