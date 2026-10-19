@@ -1,0 +1,24 @@
+---
+layout: page
+title: Topics
+subtitle: Posts grouped by subject. Add topics to any post with a "tags" line at the top.
+permalink: /topics/
+---
+{% assign tags = site.tags | sort %}
+{% if tags.size > 0 %}
+<ul class="topic-index">
+  {% for tag in tags %}<li><a href="#{{ tag[0] | slugify }}">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>{% endfor %}
+</ul>
+{% for tag in tags %}
+<section class="topic-group" id="{{ tag[0] | slugify }}">
+  <h2>{{ tag[0] }}</h2>
+  <ul class="topic-posts">
+    {% for post in tag[1] %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% else %}
+<p class="empty">No topics yet.</p>
+{% endif %}

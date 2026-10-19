@@ -1,0 +1,77 @@
+# ---------------------------------------------------------------
+#  SITE SETTINGS — edit the values in quotes, then commit.
+#  Changes appear on the live site within ~1 minute.
+#  All home-page wording (about, stats, research, art, journey)
+#  lives in _data/profile.yml.
+# ---------------------------------------------------------------
+
+# Top bar and browser tab show: "MAYA CHEN · WATER RESEARCH"
+title: "Maya Chen"
+tagline: "Water Research"
+
+# Used by search engines and link previews
+description: "Dr. Maya Chen — marine hydrologist, water researcher and artist. Research, writing and paintings about rivers, coasts and a changing climate."
+
+# Optional: a wide photo of dark water behind the top of the home page.
+# Leave blank to use the built-in painted water texture.
+hero_image: ""          # e.g. "/assets/images/ocean.jpg"
+
+author:
+  name: "Dr. Maya Chen"
+  role: "Marine hydrologist & artist"
+  email: ""            # e.g. "maya@example.com" — shown as a link and used by the contact form
+  linkedin: ""         # full URL to your LinkedIn profile, or blank
+  instagram: ""        # full URL — handy for the art side, or blank
+  location: ""         # e.g. "Bristol, UK" — optional
+
+# ---------------------------------------------------------------
+#  COURSE — the course strip on the home page and /course
+# ---------------------------------------------------------------
+course:
+  show: true                       # false hides the course everywhere
+  title: "Practical Water Loss Management"
+  status: "Waitlist open"          # e.g. "Waitlist open", "Enrolling now"
+  summary: "A self-paced online course for operators, engineers and managers who want to find, measure and reduce non-revenue water."
+  button_text: "Join the waitlist"
+  enroll_url: ""                   # your Payhip / Podia / Thinkific / form link
+
+# ---------------------------------------------------------------
+#  CONTACT FORM — GitHub Pages can't send email itself, so the form
+#  posts to a free form service. Create a form at formspree.io, then
+#  paste its endpoint here. Blank = the form opens the visitor's
+#  email app addressed to author.email instead.
+# ---------------------------------------------------------------
+contact:
+  show: true
+  form_action: ""                  # e.g. "https://formspree.io/f/abcdwxyz"
+
+# ---------------------------------------------------------------
+#  TECHNICAL — you normally don't need to touch anything below
+# ---------------------------------------------------------------
+# For a site at https://USERNAME.github.io leave baseurl empty.
+# For a project site at https://USERNAME.github.io/REPO set baseurl: "/REPO"
+url: ""
+baseurl: ""
+
+permalink: /blog/:year/:title/
+markdown: kramdown
+timezone: Europe/London
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - README.md
+  - POST-TEMPLATE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

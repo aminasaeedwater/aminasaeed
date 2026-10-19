@@ -1,0 +1,14 @@
+---
+layout: page
+title: In the studio
+subtitle: Paintings of the rivers and coasts I study.
+permalink: /art/
+body_class: art-page
+---
+{% assign s = site.data.profile.studio %}
+<blockquote class="statement">{{ s.statement }}</blockquote>
+<p class="lede">{{ s.text }}</p>
+<div class="gallery">
+  {% for piece in s.pieces %}{% include artwork.html piece=piece %}{% endfor %}
+</div>
+<p class="art-enquiry">For commissions, prints or exhibition enquiries, <a href="{{ '/' | relative_url }}#contact">get in touch</a>.</p>
