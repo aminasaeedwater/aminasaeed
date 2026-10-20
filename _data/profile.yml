@@ -65,39 +65,7 @@ work:
       outcome: "Published in Ecological Informatics (2025)."
       link: ""        # optional: paper URL
 
-studio:
-  eyebrow: "Art practice"
-  heading: "In the studio"
-  statement: "I paint water the way I study it: slowly, from the bank, waiting for the pattern to surface."
-  text: "Watercolour and ink studies made alongside fieldwork. Each piece starts as a sketch in a field notebook and is finished in the studio."
-  # SAMPLE IMAGES — the pictures in assets/images/art/ are placeholders.
-  # Replace them with photos of your own work (JPG, under ~500 KB each)
-  # and update the titles, medium and year below.
-  pieces:
-    - image: "/assets/images/art/tidal-study.svg"
-      title: "Tidal study I"
-      medium: "Watercolour on cotton paper"
-      year: "2025"
-    - image: "/assets/images/art/estuary-dusk.svg"
-      title: "Estuary at dusk"
-      medium: "Watercolour and gouache"
-      year: "2025"
-    - image: "/assets/images/art/after-rain.svg"
-      title: "Catchment, after rain"
-      medium: "Ink and wash"
-      year: "2024"
-    - image: "/assets/images/art/salt-marsh.svg"
-      title: "Salt marsh notes"
-      medium: "Watercolour on paper"
-      year: "2024"
-    - image: "/assets/images/art/riverbed.svg"
-      title: "Riverbed stones"
-      medium: "Watercolour and graphite"
-      year: "2023"
-    - image: "/assets/images/art/open-water.svg"
-      title: "Open water, no horizon"
-      medium: "Watercolour on paper"
-      year: "2023"
+
 
 journey:
   eyebrow: "A research journey"
