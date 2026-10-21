@@ -10,9 +10,9 @@ hero:
   intro: "I study how physical and biogeochemical processes control oxygen, carbon and nutrients in rivers, estuaries and coastal waters, and combine high-frequency sensors, 3D models and machine learning to explain and forecast water quality."
   # Add your photo to assets/images/ and put its path here, e.g. "/assets/images/portrait.jpg".
   # Leave blank to show the painted placeholder.
-  portrait: ""
-  portrait_alt: "Portrait of Dr. Amina Saeed"
-  portrait_caption: "In the field and in the studio"
+  #portrait: ""
+  #portrait_alt: "Portrait of Dr. Amina Saeed"
+  #portrait_caption: "In the field and in the studio"
 
 about:
   eyebrow: "About"
