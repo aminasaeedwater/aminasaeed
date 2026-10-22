@@ -11,7 +11,6 @@
         {% assign home = '/' | relative_url %}
         <li><a href="{{ home }}#about">About</a></li>
         <li><a href="{{ home }}#research">Research</a></li>
-        <li><a href="{{ '/art/' | relative_url }}" {% if page.url == '/art/' %}aria-current="page"{% endif %}>Art</a></li>
         <li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog/' %}aria-current="page"{% endif %}>Writing</a></li>
         {% if site.course.show %}<li><a href="{{ '/course/' | relative_url }}" {% if page.url == '/course/' %}aria-current="page"{% endif %}>Course</a></li>{% endif %}
         {% if site.contact.show %}<li><a href="{{ home }}#contact">Contact</a></li>{% endif %}
