@@ -16,17 +16,7 @@ layout: default
         <a class="btn btn-ghost" href="{{ '/art/' | relative_url }}">See the art</a>
       </p>
     </div>
-    <figure class="portrait">
-      <span class="portrait-wash" aria-hidden="true"></span>
-      <div class="portrait-frame">
-        {% if p.hero.portrait != "" %}
-          <img src="{{ p.hero.portrait | relative_url }}" alt="{{ p.hero.portrait_alt }}">
-        {% else %}
-          <img src="{{ '/assets/images/art/open-water.svg' | relative_url }}" alt="">
-        {% endif %}
-      </div>
-      {% if p.hero.portrait_caption != "" %}<figcaption>{{ p.hero.portrait_caption }}</figcaption>{% endif %}
-    </figure>
+    
   </div>
   {% if photo != "" and site.hero_image_credit %}
   <p class="photo-credit">{% if site.hero_image_credit_url %}<a href="{{ site.hero_image_credit_url }}">{{ site.hero_image_credit }}</a>{% else %}{{ site.hero_image_credit }}{% endif %}</p>
