@@ -84,26 +84,6 @@ layout: default
   </div>
 </section>
 
-<!-- ============ STUDIO (ART) ============ -->
-<section class="studio" id="studio" aria-labelledby="studio-title">
-  <div class="wrap studio-inner">
-    <div class="studio-text">
-      <p class="eyebrow">{{ p.studio.eyebrow }}</p>
-      <h2 id="studio-title">{{ p.studio.heading }}</h2>
-      <blockquote class="statement">{{ p.studio.statement }}</blockquote>
-      <p>{{ p.studio.text }}</p>
-      <a class="btn btn-ink" href="{{ '/art/' | relative_url }}">See all {{ p.studio.pieces.size }} works</a>
-    </div>
-    <div class="gallery-wall">
-      <div class="col">
-        {% for piece in p.studio.pieces limit:2 %}{% include artwork.html piece=piece %}{% endfor %}
-      </div>
-      <div class="col offset">
-        {% for piece in p.studio.pieces offset:2 limit:2 %}{% include artwork.html piece=piece %}{% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ JOURNEY ============ -->
 <section class="band-mint" id="journey" aria-labelledby="journey-title">
